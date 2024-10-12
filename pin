@@ -1,0 +1,18 @@
+gpio4 - reset GSM
+gpio17 - RX GSM
+gpio16 - TX GSM
+
+gpio0 - 18b20
+
+gpio18 - CLK 5110
+gpio23 - MOSI DIN 5110
+gpio22 - DC 5110
+gpio21 - CE 5110
+gpio19 - RST 5110
+
+gpio32 - RY1
+gpio33 - RY2
+gpio25 - RY3
+gpio26 - RY4
+
+gpio13 - 18b20 внешний

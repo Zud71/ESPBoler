@@ -1,0 +1,12 @@
+﻿[
+  {
+    "date": "2022-01-06",
+    "temperatureC": 32.00,
+    "version": "0.1.3",
+    "hardware": "WT32-ETH01",
+    "model": "ESP32-D0WDQ5",
+    "cpu": "2 cores @ 240 MHz",
+    "flash": "4 Mb, внешняя",
+    "freeMem": "222 / 300 KiB"
+  }
+]

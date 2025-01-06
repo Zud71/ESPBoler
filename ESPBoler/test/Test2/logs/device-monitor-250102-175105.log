@@ -1,0 +1,642 @@
+[     7][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Init LITTLEFS
+LITTLEFS OK
+System vars load OK
+Restarts count 85
+system.json
+{"hostname":"ESPBoler","lang":"en","tempOffset":12,"restarts":85}
+[   699][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 0 - WIFI_READY
+[   782][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 2 - STA_START
+[   943][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 4 - STA_CONNECTED
+[   987][D][WiFiGeneric.cpp:1040] _eventCallback(): Arduino Event: 7 - STA_GOT_IP
+[   995][D][WiFiGeneric.cpp:1103] _eventCallback(): STA IP: 192.168.88.102, MASK: 255.255.255.0, GW: 192.168.88.1
+IP Address: 192.168.88.102
+Failed to get time from server.
+[ 11526][I][ArduinoOTA.cpp:141] begin(): OTA server at: esp32-30c6f7237530.local:3232
+Ready
+IP address: 192.168.88.102
+[ 11534][I][main.cpp:68] setupTimer(): main
+[ 12534][D][main.cpp:128] timer_callback(): Debug
+[ 12539][I][main.cpp:129] timer_callback(): Info
+[ 12544][W][main.cpp:130] timer_callback(): Warning
+[ 12549][E][main.cpp:131] timer_callback(): Error
+[ 13534][D][main.cpp:128] timer_callback(): Debug
+[ 13539][I][main.cpp:129] timer_callback(): Info
+[ 13543][W][main.cpp:130] timer_callback(): Warning
+[ 13548][E][main.cpp:131] timer_callback(): Error
+[ 14534][D][main.cpp:128] timer_callback(): Debug
+[ 14539][I][main.cpp:129] timer_callback(): Info
+[ 14544][W][main.cpp:130] timer_callback(): Warning
+[ 14548][E][main.cpp:131] timer_callback(): Error
+[ 15534][D][main.cpp:128] timer_callback(): Debug
+[ 15539][I][main.cpp:129] timer_callback(): Info
+[ 15543][W][main.cpp:130] timer_callback(): Warning
+[ 15548][E][main.cpp:131] timer_callback(): Error
+[ 16534][D][main.cpp:128] timer_callback(): Debug
+[ 16540][I][main.cpp:129] timer_callback(): Info
+[ 16544][W][main.cpp:130] timer_callback(): Warning
+[ 16549][E][main.cpp:131] timer_callback(): Error
+[ 17534][D][main.cpp:128] timer_callback(): Debug
+[ 17539][I][main.cpp:129] timer_callback(): Info
+[ 17543][W][main.cpp:130] timer_callback(): Warning
+[ 17548][E][main.cpp:131] timer_callback(): Error
+[ 18534][D][main.cpp:128] timer_callback(): Debug
+[ 18539][I][main.cpp:129] timer_callback(): Info
+[ 18543][W][main.cpp:130] timer_callback(): Warning
+[ 18548][E][main.cpp:131] timer_callback(): Error
+[ 19534][D][main.cpp:128] timer_callback(): Debug
+[ 19539][I][main.cpp:129] timer_callback(): Info
+[ 19543][W][main.cpp:130] timer_callback(): Warning
+[ 19548][E][main.cpp:131] timer_callback(): Error
+[ 20534][D][main.cpp:128] timer_callback(): Debug
+[ 20539][I][main.cpp:129] timer_callback(): Info
+[ 20543][W][main.cpp:130] timer_callback(): Warning
+[ 20548][E][main.cpp:131] timer_callback(): Error
+[ 21534][D][main.cpp:128] timer_callback(): Debug
+[ 21539][I][main.cpp:129] timer_callback(): Info
+[ 21543][W][main.cpp:130] timer_callback(): Warning
+[ 21548][E][main.cpp:131] timer_callback(): Error
+[ 22534][D][main.cpp:128] timer_callback(): Debug
+[ 22539][I][main.cpp:129] timer_callback(): Info
+[ 22543][W][main.cpp:130] timer_callback(): Warning
+[ 22548][E][main.cpp:131] timer_callback(): Error
+[ 23534][D][main.cpp:128] timer_callback(): Debug
+[ 23539][I][main.cpp:129] timer_callback(): Info
+[ 23543][W][main.cpp:130] timer_callback(): Warning
+[ 23550][E][main.cpp:131] timer_callback(): Error
+[ 24534][D][main.cpp:128] timer_callback(): Debug
+[ 24539][I][main.cpp:129] timer_callback(): Info
+[ 24543][W][main.cpp:130] timer_callback(): Warning
+[ 24548][E][main.cpp:131] timer_callback(): Error
+[ 25534][D][main.cpp:128] timer_callback(): Debug
+[ 25539][I][main.cpp:129] timer_callback(): Info
+[ 25543][W][main.cpp:130] timer_callback(): Warning
+[ 25548][E][main.cpp:131] timer_callback(): Error
+[ 26534][D][main.cpp:128] timer_callback(): Debug
+[ 26539][I][main.cpp:129] timer_callback(): Info
+[ 26543][W][main.cpp:130] timer_callback(): Warning
+[ 26548][E][main.cpp:131] timer_callback(): Error
+[ 27534][D][main.cpp:128] timer_callback(): Debug
+[ 27539][I][main.cpp:129] timer_callback(): Info
+[ 27544][W][main.cpp:130] timer_callback(): Warning
+[ 27549][E][main.cpp:131] timer_callback(): Error
+[ 28534][D][main.cpp:128] timer_callback(): Debug
+[ 28539][I][main.cpp:129] timer_callback(): Info
+[ 28543][W][main.cpp:130] timer_callback(): Warning
+[ 28548][E][main.cpp:131] timer_callback(): Error
+[ 29534][D][main.cpp:128] timer_callback(): Debug
+[ 29539][I][main.cpp:129] timer_callback(): Info
+[ 29543][W][main.cpp:130] timer_callback(): Warning
+[ 29548][E][main.cpp:131] timer_callback(): Error
+[ 30534][D][main.cpp:128] timer_callback(): Debug
+[ 30539][I][main.cpp:129] timer_callback(): Info
+[ 30543][W][main.cpp:130] timer_callback(): Warning
+[ 30548][E][main.cpp:131] timer_callback(): Error
+[ 31534][D][main.cpp:128] timer_callback(): Debug
+[ 31539][I][main.cpp:129] timer_callback(): Info
+[ 31543][W][main.cpp:130] timer_callback(): Warning
+[ 31548][E][main.cpp:131] timer_callback(): Error
+[ 32534][D][main.cpp:128] timer_callback(): Debug
+[ 32539][I][main.cpp:129] timer_callback(): Info
+[ 32543][W][main.cpp:130] timer_callback(): Warning
+[ 32548][E][main.cpp:131] timer_callback(): Error
+[ 33534][D][main.cpp:128] timer_callback(): Debug
+[ 33539][I][main.cpp:129] timer_callback(): Info
+[ 33544][W][main.cpp:130] timer_callback(): Warning
+[ 33548][E][main.cpp:131] timer_callback(): Error
+[ 34534][D][main.cpp:128] timer_callback(): Debug
+[ 34539][I][main.cpp:129] timer_callback(): Info
+[ 34543][W][main.cpp:130] timer_callback(): Warning
+[ 34548][E][main.cpp:131] timer_callback(): Error
+[ 35534][D][main.cpp:128] timer_callback(): Debug
+[ 35539][I][main.cpp:129] timer_callback(): Info
+[ 35543][W][main.cpp:130] timer_callback(): Warning
+[ 35548][E][main.cpp:131] timer_callback(): Error
+[ 36534][D][main.cpp:128] timer_callback(): Debug
+[ 36539][I][main.cpp:129] timer_callback(): Info
+[ 36543][W][main.cpp:130] timer_callback(): Warning
+[ 36548][E][main.cpp:131] timer_callback(): Error
+[ 37534][D][main.cpp:128] timer_callback(): Debug
+[ 37539][I][main.cpp:129] timer_callback(): Info
+[ 37543][W][main.cpp:130] timer_callback(): Warning
+[ 37548][E][main.cpp:131] timer_callback(): Error
+[ 38534][D][main.cpp:128] timer_callback(): Debug
+[ 38539][I][main.cpp:129] timer_callback(): Info
+[ 38543][W][main.cpp:130] timer_callback(): Warning
+[ 38548][E][main.cpp:131] timer_callback(): Error
+[ 39534][D][main.cpp:128] timer_callback(): Debug
+[ 39539][I][main.cpp:129] timer_callback(): Info
+[ 39543][W][main.cpp:130] timer_callback(): Warning
+[ 39548][E][main.cpp:131] timer_callback(): Error
+[ 40534][D][main.cpp:128] timer_callback(): Debug
+[ 40539][I][main.cpp:129] timer_callback(): Info
+[ 40543][W][main.cpp:130] timer_callback(): Warning
+[ 40548][E][main.cpp:131] timer_callback(): Error
+[ 41534][D][main.cpp:128] timer_callback(): Debug
+[ 41539][I][main.cpp:129] timer_callback(): Info
+[ 41543][W][main.cpp:130] timer_callback(): Warning
+[ 41548][E][main.cpp:131] timer_callback(): Error
+[ 42534][D][main.cpp:128] timer_callback(): Debug
+[ 42539][I][main.cpp:129] timer_callback(): Info
+[ 42543][W][main.cpp:130] timer_callback(): Warning
+[ 42548][E][main.cpp:131] timer_callback(): Error
+[ 43534][D][main.cpp:128] timer_callback(): Debug
+[ 43539][I][main.cpp:129] timer_callback(): Info
+[ 43543][W][main.cpp:130] timer_callback(): Warning
+[ 43548][E][main.cpp:131] timer_callback(): Error
+[ 44534][D][main.cpp:128] timer_callback(): Debug
+[ 44542][I][main.cpp:129] timer_callback(): Info
+[ 44547][W][main.cpp:130] timer_callback(): Warning
+[ 44552][E][main.cpp:131] timer_callback(): Error
+[ 45534][D][main.cpp:128] timer_callback(): Debug
+[ 45539][I][main.cpp:129] timer_callback(): Info
+[ 45543][W][main.cpp:130] timer_callback(): Warning
+[ 45548][E][main.cpp:131] timer_callback(): Error
+[ 46534][D][main.cpp:128] timer_callback(): Debug
+[ 46539][I][main.cpp:129] timer_callback(): Info
+[ 46543][W][main.cpp:130] timer_callback(): Warning
+[ 46548][E][main.cpp:131] timer_callback(): Error
+[ 47534][D][main.cpp:128] timer_callback(): Debug
+[ 47539][I][main.cpp:129] timer_callback(): Info
+[ 47543][W][main.cpp:130] timer_callback(): Warning
+[ 47548][E][main.cpp:131] timer_callback(): Error
+[ 48536][D][main.cpp:128] timer_callback(): Debug
+[ 48541][I][main.cpp:129] timer_callback(): Info
+[ 48545][W][main.cpp:130] timer_callback(): Warning
+[ 48550][E][main.cpp:131] timer_callback(): Error
+[ 49534][D][main.cpp:128] timer_callback(): Debug
+[ 49539][I][main.cpp:129] timer_callback(): Info
+[ 49543][W][main.cpp:130] timer_callback(): Warning
+[ 49548][E][main.cpp:131] timer_callback(): Error
+[ 50534][D][main.cpp:128] timer_callback(): Debug
+[ 50539][I][main.cpp:129] timer_callback(): Info
+[ 50544][W][main.cpp:130] timer_callback(): Warning
+[ 50548][E][main.cpp:131] timer_callback(): Error
+[ 51534][D][main.cpp:128] timer_callback(): Debug
+[ 51539][I][main.cpp:129] timer_callback(): Info
+[ 51543][W][main.cpp:130] timer_callback(): Warning
+[ 51548][E][main.cpp:131] timer_callback(): Error
+[ 52534][D][main.cpp:128] timer_callback(): Debug
+[ 52539][I][main.cpp:129] timer_callback(): Info
+[ 52543][W][main.cpp:130] timer_callback(): Warning
+[ 52548][E][main.cpp:131] timer_callback(): Error
+[ 53534][D][main.cpp:128] timer_callback(): Debug
+[ 53539][I][main.cpp:129] timer_callback(): Info
+[ 53543][W][main.cpp:130] timer_callback(): Warning
+[ 53548][E][main.cpp:131] timer_callback(): Error
+[ 54534][D][main.cpp:128] timer_callback(): Debug
+[ 54539][I][main.cpp:129] timer_callback(): Info
+[ 54544][W][main.cpp:130] timer_callback(): Warning
+[ 54549][E][main.cpp:131] timer_callback(): Error
+[ 55534][D][main.cpp:128] timer_callback(): Debug
+[ 55539][I][main.cpp:129] timer_callback(): Info
+[ 55543][W][main.cpp:130] timer_callback(): Warning
+[ 55548][E][main.cpp:131] timer_callback(): Error
+[ 56534][D][main.cpp:128] timer_callback(): Debug
+[ 56539][I][main.cpp:129] timer_callback(): Info
+[ 56543][W][main.cpp:130] timer_callback(): Warning
+[ 56548][E][main.cpp:131] timer_callback(): Error
+[ 57534][D][main.cpp:128] timer_callback(): Debug
+[ 57539][I][main.cpp:129] timer_callback(): Info
+[ 57543][W][main.cpp:130] timer_callback(): Warning
+[ 57548][E][main.cpp:131] timer_callback(): Error
+[ 58534][D][main.cpp:128] timer_callback(): Debug
+[ 58539][I][main.cpp:129] timer_callback(): Info
+[ 58543][W][main.cpp:130] timer_callback(): Warning
+[ 58548][E][main.cpp:131] timer_callback(): Error
+[ 59534][D][main.cpp:128] timer_callback(): Debug
+[ 59539][I][main.cpp:129] timer_callback(): Info
+[ 59543][W][main.cpp:130] timer_callback(): Warning
+[ 59548][E][main.cpp:131] timer_callback(): Error
+[ 60534][D][main.cpp:128] timer_callback(): Debug
+[ 60539][I][main.cpp:129] timer_callback(): Info
+[ 60543][W][main.cpp:130] timer_callback(): Warning
+[ 60548][E][main.cpp:131] timer_callback(): Error
+[ 61534][D][main.cpp:128] timer_callback(): Debug
+[ 61541][I][main.cpp:129] timer_callback(): Info
+[ 61546][W][main.cpp:130] timer_callback(): Warning
+[ 61550][E][main.cpp:131] timer_callback(): Error
+[ 62534][D][main.cpp:128] timer_callback(): Debug
+[ 62539][I][main.cpp:129] timer_callback(): Info
+[ 62543][W][main.cpp:130] timer_callback(): Warning
+[ 62548][E][main.cpp:131] timer_callback(): Error
+[ 63534][D][main.cpp:128] timer_callback(): Debug
+[ 63539][I][main.cpp:129] timer_callback(): Info
+[ 63543][W][main.cpp:130] timer_callback(): Warning
+[ 63548][E][main.cpp:131] timer_callback(): Error
+[ 64534][D][main.cpp:128] timer_callback(): Debug
+[ 64539][I][main.cpp:129] timer_callback(): Info
+[ 64543][W][main.cpp:130] timer_callback(): Warning
+[ 64548][E][main.cpp:131] timer_callback(): Error
+[ 65534][D][main.cpp:128] timer_callback(): Debug
+[ 65539][I][main.cpp:129] timer_callback(): Info
+[ 65543][W][main.cpp:130] timer_callback(): Warning
+[ 65548][E][main.cpp:131] timer_callback(): Error
+[ 66534][D][main.cpp:128] timer_callback(): Debug
+[ 66539][I][main.cpp:129] timer_callback(): Info
+[ 66543][W][main.cpp:130] timer_callback(): Warning
+[ 66548][E][main.cpp:131] timer_callback(): Error
+[ 67534][D][main.cpp:128] timer_callback(): Debug
+[ 67539][I][main.cpp:129] timer_callback(): Info
+[ 67543][W][main.cpp:130] timer_callback(): Warning
+[ 67548][E][main.cpp:131] timer_callback(): Error
+[ 68534][D][main.cpp:128] timer_callback(): Debug
+[ 68539][I][main.cpp:129] timer_callback(): Info
+[ 68543][W][main.cpp:130] timer_callback(): Warning
+[ 68548][E][main.cpp:131] timer_callback(): Error
+[ 69534][D][main.cpp:128] timer_callback(): Debug
+[ 69539][I][main.cpp:129] timer_callback(): Info
+[ 69543][W][main.cpp:130] timer_callback(): Warning
+[ 69548][E][main.cpp:131] timer_callback(): Error
+[ 70534][D][main.cpp:128] timer_callback(): Debug
+[ 70539][I][main.cpp:129] timer_callback(): Info
+[ 70543][W][main.cpp:130] timer_callback(): Warning
+[ 70548][E][main.cpp:131] timer_callback(): Error
+[ 71534][D][main.cpp:128] timer_callback(): Debug
+[ 71539][I][main.cpp:129] timer_callback(): Info
+[ 71543][W][main.cpp:130] timer_callback(): Warning
+[ 71548][E][main.cpp:131] timer_callback(): Error
+[ 72534][D][main.cpp:128] timer_callback(): Debug
+[ 72539][I][main.cpp:129] timer_callback(): Info
+[ 72543][W][main.cpp:130] timer_callback(): Warning
+[ 72548][E][main.cpp:131] timer_callback(): Error
+[ 73534][D][main.cpp:128] timer_callback(): Debug
+[ 73539][I][main.cpp:129] timer_callback(): Info
+[ 73543][W][main.cpp:130] timer_callback(): Warning
+[ 73548][E][main.cpp:131] timer_callback(): Error
+[ 74534][D][main.cpp:128] timer_callback(): Debug
+[ 74539][I][main.cpp:129] timer_callback(): Info
+[ 74546][W][main.cpp:130] timer_callback(): Warning
+[ 74551][E][main.cpp:131] timer_callback(): Error
+[ 75534][D][main.cpp:128] timer_callback(): Debug
+[ 75539][I][main.cpp:129] timer_callback(): Info
+[ 75544][W][main.cpp:130] timer_callback(): Warning
+[ 75549][E][main.cpp:131] timer_callback(): Error
+[ 76534][D][main.cpp:128] timer_callback(): Debug
+[ 76539][I][main.cpp:129] timer_callback(): Info
+[ 76543][W][main.cpp:130] timer_callback(): Warning
+[ 76548][E][main.cpp:131] timer_callback(): Error
+[ 77534][D][main.cpp:128] timer_callback(): Debug
+[ 77539][I][main.cpp:129] timer_callback(): Info
+[ 77543][W][main.cpp:130] timer_callback(): Warning
+[ 77548][E][main.cpp:131] timer_callback(): Error
+[ 78534][D][main.cpp:128] timer_callback(): Debug
+[ 78540][I][main.cpp:129] timer_callback(): Info
+[ 78544][W][main.cpp:130] timer_callback(): Warning
+[ 78549][E][main.cpp:131] timer_callback(): Error
+[ 79534][D][main.cpp:128] timer_callback(): Debug
+[ 79539][I][main.cpp:129] timer_callback(): Info
+[ 79543][W][main.cpp:130] timer_callback(): Warning
+[ 79548][E][main.cpp:131] timer_callback(): Error
+[ 80534][D][main.cpp:128] timer_callback(): Debug
+[ 80539][I][main.cpp:129] timer_callback(): Info
+[ 80544][W][main.cpp:130] timer_callback(): Warning
+[ 80548][E][main.cpp:131] timer_callback(): Error
+[ 81534][D][main.cpp:128] timer_callback(): Debug
+[ 81539][I][main.cpp:129] timer_callback(): Info
+[ 81543][W][main.cpp:130] timer_callback(): Warning
+[ 81548][E][main.cpp:131] timer_callback(): Error
+[ 82534][D][main.cpp:128] timer_callback(): Debug
+[ 82539][I][main.cpp:129] timer_callback(): Info
+[ 82543][W][main.cpp:130] timer_callback(): Warning
+[ 82548][E][main.cpp:131] timer_callback(): Error
+[ 83534][D][main.cpp:128] timer_callback(): Debug
+[ 83539][I][main.cpp:129] timer_callback(): Info
+[ 83543][W][main.cpp:130] timer_callback(): Warning
+[ 83548][E][main.cpp:131] timer_callback(): Error
+[ 84534][D][main.cpp:128] timer_callback(): Debug
+[ 84539][I][main.cpp:129] timer_callback(): Info
+[ 84543][W][main.cpp:130] timer_callback(): Warning
+[ 84548][E][main.cpp:131] timer_callback(): Error
+[ 85534][D][main.cpp:128] timer_callback(): Debug
+[ 85539][I][main.cpp:129] timer_callback(): Info
+[ 85543][W][main.cpp:130] timer_callback(): Warning
+[ 85548][E][main.cpp:131] timer_callback(): Error
+[ 86534][D][main.cpp:128] timer_callback(): Debug
+[ 86539][I][main.cpp:129] timer_callback(): Info
+[ 86543][W][main.cpp:130] timer_callback(): Warning
+[ 86548][E][main.cpp:131] timer_callback(): Error
+[ 87534][D][main.cpp:128] timer_callback(): Debug
+[ 87539][I][main.cpp:129] timer_callback(): Info
+[ 87544][W][main.cpp:130] timer_callback(): Warning
+[ 87551][E][main.cpp:131] timer_callback(): Error
+[ 88534][D][main.cpp:128] timer_callback(): Debug
+[ 88539][I][main.cpp:129] timer_callback(): Info
+[ 88543][W][main.cpp:130] timer_callback(): Warning
+[ 88548][E][main.cpp:131] timer_callback(): Error
+[ 89534][D][main.cpp:128] timer_callback(): Debug
+[ 89539][I][main.cpp:129] timer_callback(): Info
+[ 89543][W][main.cpp:130] timer_callback(): Warning
+[ 89548][E][main.cpp:131] timer_callback(): Error
+[ 90534][D][main.cpp:128] timer_callback(): Debug
+[ 90539][I][main.cpp:129] timer_callback(): Info
+[ 90543][W][main.cpp:130] timer_callback(): Warning
+[ 90548][E][main.cpp:131] timer_callback(): Error
+[ 91534][D][main.cpp:128] timer_callback(): Debug
+[ 91539][I][main.cpp:129] timer_callback(): Info
+[ 91544][W][main.cpp:130] timer_callback(): Warning
+[ 91549][E][main.cpp:131] timer_callback(): Error
+[ 92534][D][main.cpp:128] timer_callback(): Debug
+[ 92539][I][main.cpp:129] timer_callback(): Info
+[ 92543][W][main.cpp:130] timer_callback(): Warning
+[ 92548][E][main.cpp:131] timer_callback(): Error
+[ 93534][D][main.cpp:128] timer_callback(): Debug
+[ 93539][I][main.cpp:129] timer_callback(): Info
+[ 93543][W][main.cpp:130] timer_callback(): Warning
+[ 93548][E][main.cpp:131] timer_callback(): Error
+[ 94534][D][main.cpp:128] timer_callback(): Debug
+[ 94539][I][main.cpp:129] timer_callback(): Info
+[ 94543][W][main.cpp:130] timer_callback(): Warning
+[ 94548][E][main.cpp:131] timer_callback(): Error
+[ 95534][D][main.cpp:128] timer_callback(): Debug
+[ 95539][I][main.cpp:129] timer_callback(): Info
+[ 95544][W][main.cpp:130] timer_callback(): Warning
+[ 95548][E][main.cpp:131] timer_callback(): Error
+[ 96534][D][main.cpp:128] timer_callback(): Debug
+[ 96539][I][main.cpp:129] timer_callback(): Info
+[ 96543][W][main.cpp:130] timer_callback(): Warning
+[ 96548][E][main.cpp:131] timer_callback(): Error
+[ 97534][D][main.cpp:128] timer_callback(): Debug
+[ 97539][I][main.cpp:129] timer_callback(): Info
+[ 97543][W][main.cpp:130] timer_callback(): Warning
+[ 97548][E][main.cpp:131] timer_callback(): Error
+[ 98534][D][main.cpp:128] timer_callback(): Debug
+[ 98539][I][main.cpp:129] timer_callback(): Info
+[ 98543][W][main.cpp:130] timer_callback(): Warning
+[ 98548][E][main.cpp:131] timer_callback(): Error
+[ 99534][D][main.cpp:128] timer_callback(): Debug
+[ 99539][I][main.cpp:129] timer_callback(): Info
+[ 99543][W][main.cpp:130] timer_callback(): Warning
+[ 99548][E][main.cpp:131] timer_callback(): Error
+[100534][D][main.cpp:128] timer_callback(): Debug
+[100539][I][main.cpp:129] timer_callback(): Info
+[100543][W][main.cpp:130] timer_callback(): Warning
+[100548][E][main.cpp:131] timer_callback(): Error
+[101534][D][main.cpp:128] timer_callback(): Debug
+[101539][I][main.cpp:129] timer_callback(): Info
+[101544][W][main.cpp:130] timer_callback(): Warning
+[101549][E][main.cpp:131] timer_callback(): Error
+[102534][D][main.cpp:128] timer_callback(): Debug
+[102539][I][main.cpp:129] timer_callback(): Info
+[102543][W][main.cpp:130] timer_callback(): Warning
+[102548][E][main.cpp:131] timer_callback(): Error
+[103534][D][main.cpp:128] timer_callback(): Debug
+[103539][I][main.cpp:129] timer_callback(): Info
+[103543][W][main.cpp:130] timer_callback(): Warning
+[103548][E][main.cpp:131] timer_callback(): Error
+[104534][D][main.cpp:128] timer_callback(): Debug
+[104539][I][main.cpp:129] timer_callback(): Info
+[104543][W][main.cpp:130] timer_callback(): Warning
+[104550][E][main.cpp:131] timer_callback(): Error
+[105534][D][main.cpp:128] timer_callback(): Debug
+[105539][I][main.cpp:129] timer_callback(): Info
+[105544][W][main.cpp:130] timer_callback(): Warning
+[105549][E][main.cpp:131] timer_callback(): Error
+[106534][D][main.cpp:128] timer_callback(): Debug
+[106539][I][main.cpp:129] timer_callback(): Info
+[106543][W][main.cpp:130] timer_callback(): Warning
+[106548][E][main.cpp:131] timer_callback(): Error
+[107534][D][main.cpp:128] timer_callback(): Debug
+[107539][I][main.cpp:129] timer_callback(): Info
+[107543][W][main.cpp:130] timer_callback(): Warning
+[107548][E][main.cpp:131] timer_callback(): Error
+[108534][D][main.cpp:128] timer_callback(): Debug
+[108539][I][main.cpp:129] timer_callback(): Info
+[108544][W][main.cpp:130] timer_callback(): Warning
+[108549][E][main.cpp:131] timer_callback(): Error
+[109534][D][main.cpp:128] timer_callback(): Debug
+[109539][I][main.cpp:129] timer_callback(): Info
+[109543][W][main.cpp:130] timer_callback(): Warning
+[109548][E][main.cpp:131] timer_callback(): Error
+[110534][D][main.cpp:128] timer_callback(): Debug
+[110539][I][main.cpp:129] timer_callback(): Info
+[110543][W][main.cpp:130] timer_callback(): Warning
+[110548][E][main.cpp:131] timer_callback(): Error
+[111534][D][main.cpp:128] timer_callback(): Debug
+[111539][I][main.cpp:129] timer_callback(): Info
+[111543][W][main.cpp:130] timer_callback(): Warning
+[111548][E][main.cpp:131] timer_callback(): Error
+[112534][D][main.cpp:128] timer_callback(): Debug
+[112539][I][main.cpp:129] timer_callback(): Info
+[112543][W][main.cpp:130] timer_callback(): Warning
+[112548][E][main.cpp:131] timer_callback(): Error
+[113534][D][main.cpp:128] timer_callback(): Debug
+[113539][I][main.cpp:129] timer_callback(): Info
+[113543][W][main.cpp:130] timer_callback(): Warning
+[113548][E][main.cpp:131] timer_callback(): Error
+[114534][D][main.cpp:128] timer_callback(): Debug
+[114539][I][main.cpp:129] timer_callback(): Info
+[114543][W][main.cpp:130] timer_callback(): Warning
+[114548][E][main.cpp:131] timer_callback(): Error
+[115534][D][main.cpp:128] timer_callback(): Debug
+[115539][I][main.cpp:129] timer_callback(): Info
+[115543][W][main.cpp:130] timer_callback(): Warning
+[115548][E][main.cpp:131] timer_callback(): Error
+[116534][D][main.cpp:128] timer_callback(): Debug
+[116539][I][main.cpp:129] timer_callback(): Info
+[116543][W][main.cpp:130] timer_callback(): Warning
+[116548][E][main.cpp:131] timer_callback(): Error
+[117534][D][main.cpp:128] timer_callback(): Debug
+[117539][I][main.cpp:129] timer_callback(): Info
+[117543][W][main.cpp:130] timer_callback(): Warning
+[117548][E][main.cpp:131] timer_callback(): Error
+[118534][D][main.cpp:128] timer_callback(): Debug
+[118539][I][main.cpp:129] timer_callback(): Info
+[118543][W][main.cpp:130] timer_callback(): Warning
+[118548][E][main.cpp:131] timer_callback(): Error
+[119534][D][main.cpp:128] timer_callback(): Debug
+[119539][I][main.cpp:129] timer_callback(): Info
+[119543][W][main.cpp:130] timer_callback(): Warning
+[119548][E][main.cpp:131] timer_callback(): Error
+[120534][D][main.cpp:128] timer_callback(): Debug
+[120539][I][main.cpp:129] timer_callback(): Info
+[120543][W][main.cpp:130] timer_callback(): Warning
+[120548][E][main.cpp:131] timer_callback(): Error
+[121534][D][main.cpp:128] timer_callback(): Debug
+[121539][I][main.cpp:129] timer_callback(): Info
+[121543][W][main.cpp:130] timer_callback(): Warning
+[121549][E][main.cpp:131] timer_callback(): Error
+[122534][D][main.cpp:128] timer_callback(): Debug
+[122539][I][main.cpp:129] timer_callback(): Info
+[122543][W][main.cpp:130] timer_callback(): Warning
+[122548][E][main.cpp:131] timer_callback(): Error
+[123534][D][main.cpp:128] timer_callback(): Debug
+[123539][I][main.cpp:129] timer_callback(): Info
+[123543][W][main.cpp:130] timer_callback(): Warning
+[123548][E][main.cpp:131] timer_callback(): Error
+[124534][D][main.cpp:128] timer_callback(): Debug
+[124539][I][main.cpp:129] timer_callback(): Info
+[124543][W][main.cpp:130] timer_callback(): Warning
+[124548][E][main.cpp:131] timer_callback(): Error
+[125534][D][main.cpp:128] timer_callback(): Debug
+[125542][I][main.cpp:129] timer_callback(): Info
+[125547][W][main.cpp:130] timer_callback(): Warning
+[125552][E][main.cpp:131] timer_callback(): Error
+[126534][D][main.cpp:128] timer_callback(): Debug
+[126539][I][main.cpp:129] timer_callback(): Info
+[126543][W][main.cpp:130] timer_callback(): Warning
+[126548][E][main.cpp:131] timer_callback(): Error
+[127534][D][main.cpp:128] timer_callback(): Debug
+[127539][I][main.cpp:129] timer_callback(): Info
+[127543][W][main.cpp:130] timer_callback(): Warning
+[127548][E][main.cpp:131] timer_callback(): Error
+[128534][D][main.cpp:128] timer_callback(): Debug
+[128539][I][main.cpp:129] timer_callback(): Info
+[128543][W][main.cpp:130] timer_callback(): Warning
+[128548][E][main.cpp:131] timer_callback(): Error
+[129536][D][main.cpp:128] timer_callback(): Debug
+[129541][I][main.cpp:129] timer_callback(): Info
+[129545][W][main.cpp:130] timer_callback(): Warning
+[129550][E][main.cpp:131] timer_callback(): Error
+[130534][D][main.cpp:128] timer_callback(): Debug
+[130539][I][main.cpp:129] timer_callback(): Info
+[130543][W][main.cpp:130] timer_callback(): Warning
+[130548][E][main.cpp:131] timer_callback(): Error
+[131534][D][main.cpp:128] timer_callback(): Debug
+[131540][I][main.cpp:129] timer_callback(): Info
+[131544][W][main.cpp:130] timer_callback(): Warning
+[131549][E][main.cpp:131] timer_callback(): Error
+[132534][D][main.cpp:128] timer_callback(): Debug
+[132539][I][main.cpp:129] timer_callback(): Info
+[132543][W][main.cpp:130] timer_callback(): Warning
+[132548][E][main.cpp:131] timer_callback(): Error
+[133534][D][main.cpp:128] timer_callback(): Debug
+[133539][I][main.cpp:129] timer_callback(): Info
+[133543][W][main.cpp:130] timer_callback(): Warning
+[133548][E][main.cpp:131] timer_callback(): Error
+[134534][D][main.cpp:128] timer_callback(): Debug
+[134539][I][main.cpp:129] timer_callback(): Info
+[134543][W][main.cpp:130] timer_callback(): Warning
+[134548][E][main.cpp:131] timer_callback(): Error
+[135534][D][main.cpp:128] timer_callback(): Debug
+[135539][I][main.cpp:129] timer_callback(): Info
+[135544][W][main.cpp:130] timer_callback(): Warning
+[135549][E][main.cpp:131] timer_callback(): Error
+[136534][D][main.cpp:128] timer_callback(): Debug
+[136539][I][main.cpp:129] timer_callback(): Info
+[136543][W][main.cpp:130] timer_callback(): Warning
+[136548][E][main.cpp:131] timer_callback(): Error
+[137534][D][main.cpp:128] timer_callback(): Debug
+[137539][I][main.cpp:129] timer_callback(): Info
+[137543][W][main.cpp:130] timer_callback(): Warning
+[137548][E][main.cpp:131] timer_callback(): Error
+[138534][D][main.cpp:128] timer_callback(): Debug
+[138539][I][main.cpp:129] timer_callback(): Info
+[138543][W][main.cpp:130] timer_callback(): Warning
+[138548][E][main.cpp:131] timer_callback(): Error
+[139534][D][main.cpp:128] timer_callback(): Debug
+[139539][I][main.cpp:129] timer_callback(): Info
+[139543][W][main.cpp:130] timer_callback(): Warning
+[139548][E][main.cpp:131] timer_callback(): Error
+[140534][D][main.cpp:128] timer_callback(): Debug
+[140539][I][main.cpp:129] timer_callback(): Info
+[140543][W][main.cpp:130] timer_callback(): Warning
+[140548][E][main.cpp:131] timer_callback(): Error
+[141534][D][main.cpp:128] timer_callback(): Debug
+[141539][I][main.cpp:129] timer_callback(): Info
+[141543][W][main.cpp:130] timer_callback(): Warning
+[141548][E][main.cpp:131] timer_callback(): Error
+[142534][D][main.cpp:128] timer_callback(): Debug
+[142541][I][main.cpp:129] timer_callback(): Info
+[142546][W][main.cpp:130] timer_callback(): Warning
+[142550][E][main.cpp:131] timer_callback(): Error
+[143534][D][main.cpp:128] timer_callback(): Debug
+[143539][I][main.cpp:129] timer_callback(): Info
+[143543][W][main.cpp:130] timer_callback(): Warning
+[143548][E][main.cpp:131] timer_callback(): Error
+[144534][D][main.cpp:128] timer_callback(): Debug
+[144539][I][main.cpp:129] timer_callback(): Info
+[144543][W][main.cpp:130] timer_callback(): Warning
+[144548][E][main.cpp:131] timer_callback(): Error
+[145534][D][main.cpp:128] timer_callback(): Debug
+[145539][I][main.cpp:129] timer_callback(): Info
+[145543][W][main.cpp:130] timer_callback(): Warning
+[145548][E][main.cpp:131] timer_callback(): Error
+[146534][D][main.cpp:128] timer_callback(): Debug
+[146539][I][main.cpp:129] timer_callback(): Info
+[146543][W][main.cpp:130] timer_callback(): Warning
+[146548][E][main.cpp:131] timer_callback(): Error
+[147534][D][main.cpp:128] timer_callback(): Debug
+[147539][I][main.cpp:129] timer_callback(): Info
+[147543][W][main.cpp:130] timer_callback(): Warning
+[147548][E][main.cpp:131] timer_callback(): Error
+[148534][D][main.cpp:128] timer_callback(): Debug
+[148539][I][main.cpp:129] timer_callback(): Info
+[148543][W][main.cpp:130] timer_callback(): Warning
+[148548][E][main.cpp:131] timer_callback(): Error
+[149534][D][main.cpp:128] timer_callback(): Debug
+[149539][I][main.cpp:129] timer_callback(): Info
+[149543][W][main.cpp:130] timer_callback(): Warning
+[149548][E][main.cpp:131] timer_callback(): Error
+[150534][D][main.cpp:128] timer_callback(): Debug
+[150539][I][main.cpp:129] timer_callback(): Info
+[150543][W][main.cpp:130] timer_callback(): Warning
+[150548][E][main.cpp:131] timer_callback(): Error
+[151534][D][main.cpp:128] timer_callback(): Debug
+[151539][I][main.cpp:129] timer_callback(): Info
+[151543][W][main.cpp:130] timer_callback(): Warning
+[151548][E][main.cpp:131] timer_callback(): Error
+[152534][D][main.cpp:128] timer_callback(): Debug
+[152539][I][main.cpp:129] timer_callback(): Info
+[152543][W][main.cpp:130] timer_callback(): Warning
+[152548][E][main.cpp:131] timer_callback(): Error
+[153534][D][main.cpp:128] timer_callback(): Debug
+[153539][I][main.cpp:129] timer_callback(): Info
+[153543][W][main.cpp:130] timer_callback(): Warning
+[153548][E][main.cpp:131] timer_callback(): Error
+[154534][D][main.cpp:128] timer_callback(): Debug
+[154539][I][main.cpp:129] timer_callback(): Info
+[154543][W][main.cpp:130] timer_callback(): Warning
+[154548][E][main.cpp:131] timer_callback(): Error
+[155534][D][main.cpp:128] timer_callback(): Debug
+[155540][I][main.cpp:129] timer_callback(): Info
+[155546][W][main.cpp:130] timer_callback(): Warning
+[155551][E][main.cpp:131] timer_callback(): Error
+[156534][D][main.cpp:128] timer_callback(): Debug
+[156539][I][main.cpp:129] timer_callback(): Info
+[156543][W][main.cpp:130] timer_callback(): Warning
+[156548][E][main.cpp:131] timer_callback(): Error
+[157534][D][main.cpp:128] timer_callback(): Debug
+[157539][I][main.cpp:129] timer_callback(): Info
+[157543][W][main.cpp:130] timer_callback(): Warning
+[157548][E][main.cpp:131] timer_callback(): Error
+[158534][D][main.cpp:128] timer_callback(): Debug
+[158539][I][main.cpp:129] timer_callback(): Info
+[158543][W][main.cpp:130] timer_callback(): Warning
+[158548][E][main.cpp:131] timer_callback(): Error
+[159534][D][main.cpp:128] timer_callback(): Debug
+[159540][I][main.cpp:129] timer_callback(): Info
+[159544][W][main.cpp:130] timer_callback(): Warning
+[159549][E][main.cpp:131] timer_callback(): Error
+[160534][D][main.cpp:128] timer_callback(): Debug
+[160539][I][main.cpp:129] timer_callback(): Info
+[160543][W][main.cpp:130] timer_callback(): Warning
+[160548][E][main.cpp:131] timer_callback(): Error
+[161534][D][main.cpp:128] timer_callback(): Debug
+[161539][I][main.cpp:129] timer_callback(): Info
+[161544][W][main.cpp:130] timer_callback(): Warning
+[161549][E][main.cpp:131] timer_callback(): Error
+[162534][D][main.cpp:128] timer_callback(): Debug
+[162539][I][main.cpp:129] timer_callback(): Info
+[162543][W][main.cpp:130] timer_callback(): Warning
+[162548][E][main.cpp:131] timer_callback(): Error
+[163534][D][main.cpp:128] timer_callback(): Debug
+[163539][I][main.cpp:129] timer_callback(): Info
+[163543][W][main.cpp:130] timer_callback(): Warning
+[163548][E][main.cpp:131] timer_callback(): Error
+[164534][D][main.cpp:128] timer_callback(): Debug
+[164539][I][main.cpp:129] timer_callback(): Info
+[164543][W][main.cpp:130] timer_callback(): Warning
+[164548][E][main.cpp:131] timer_callback(): Error
+[165534][D][main.cpp:128] timer_callback(): Debug
+[165539][I][main.cpp:129] timer_callback(): Info
+[165543][W][main.cpp:130] timer_callback(): Warning
+[165548][E][main.cpp:131] timer_callback(): Error
+[166534][D][main.cpp:128] timer_callback(): Debug
+[166539][I][main.cpp:129] timer_callback(): Info
+[166543][W][main.cpp:130] timer_callback(): Warning
+[166548][E][main.cpp:131] timer_callback(): Error
+[167534][D][main.cpp:128] timer_callback(): Debug
+[167539][I][main.cpp:129] timer_callback(): Info
+[167543][W][main.cpp:130] timer_callback(): Warning
+[167548][E][main.cpp:131] timer_callback(): Error

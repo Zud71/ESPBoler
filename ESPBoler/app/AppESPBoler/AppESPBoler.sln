@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppESPBoler", "AppESPBoler\AppESPBoler.csproj", "{818D9CAB-568F-457D-A0C7-3853F2400837}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{818D9CAB-568F-457D-A0C7-3853F2400837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818D9CAB-568F-457D-A0C7-3853F2400837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818D9CAB-568F-457D-A0C7-3853F2400837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818D9CAB-568F-457D-A0C7-3853F2400837}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A25E3F09-E1CC-4E7B-B29A-48B08ADAADC4}
+	EndGlobalSection
+EndGlobal

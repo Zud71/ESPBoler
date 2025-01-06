@@ -1,0 +1,55 @@
+﻿@page "/state_system"
+@inject HttpClient Http
+
+<PageTitle>[[STATE_SYSTEM]]</PageTitle>
+
+<h1>[[STATE_SYSTEM]]</h1>
+
+
+@if (statesystem == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<ul>
+        <li>@statesystem.Date.ToShortDateString()</li>
+        <li>@statesystem.TemperatureC</li>
+        <li>@statesystem.Version</li>
+        <li>@statesystem.Hardware</li>
+        <li>@statesystem.Model</li>
+        <li>@statesystem.CPU</li>
+        <li>@statesystem.Flash</li>
+        <li>@statesystem.FreeMem</li>
+</ul>
+}
+
+@code {
+    private StateSystem? statesystem;
+
+    protected override async Task OnInitializedAsync()
+    {
+        object? data = await Http.GetAsync("state_system");
+        statesystem = await Http.GetFromJsonAsync<StateSystem>("state_system");
+    }
+
+    public class StateSystem
+    {
+        public string? Date { get; set; }
+
+        public float TemperatureC { get; set; }
+
+        public string? Version { get; set; }
+        
+        public string? Hardware { get; set; }
+
+        public string? Model { get; set; }
+
+        public string? CPU { get; set; }
+        
+        public string? Flash { get; set; }
+
+        public string? FreeMem { get; set; }
+
+    }
+}

@@ -1,0 +1,66 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">AppESPBoler</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+
+        <ul class="nav-item px-1">
+            <li class="nav-item px-1">
+                <a class="nav-link" aria-current="page" href="#"><span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> 1</a>
+            </li>
+            <li class="nav-item px-1">
+                <a class="nav-link" href="#"><span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> 2</a>
+            </li>
+            <li class="nav-item px-1">
+                <a class="nav-link" href="#"><span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span>3</a>
+            </li>
+            <li class="nav-item px-1">
+                <a class="nav-link" @onclick="()=>ShowSubMenu()"><span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span>[[STATISTICS]]</a>
+
+                    <ul class="px-3" style="visibility:visible">
+                        <li class="nav-item-sub">
+                            <a class="nav-link" href="#"><span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span>1</a>
+                        </li>
+                        <li class="nav-item-sub">
+                        <a class="nav-link" href="/state_system"><span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span>[[STATE_SYSTEM]]</a>
+                        </li>
+                        <li class="nav-item-sub">
+                            <a class="nav-link" href="#"><span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span>3</a>
+                        </li>
+                    </ul>
+
+
+            </li>
+        </ul>
+
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private bool submenu_statistics = false;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void ShowSubMenu()
+    {
+        if (submenu_statistics)
+        {
+            submenu_statistics = false;
+
+        }
+        else submenu_statistics = true;
+    }
+}

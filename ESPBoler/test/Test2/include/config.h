@@ -1,6 +1,8 @@
 #ifndef Config_h
 #define Config_h
 
+#define CONFIG_ARDUHAL_LOG_COLORS 1
+
 #include <Arduino.h>
 #include <WiFi.h>
 #include <ArduinoJson.h>
@@ -75,7 +77,11 @@ struct VarSystem
   char hostname[50];
   int restarts;
   JsonDocument sensors;
+  JsonDocument netConfExtSensor;
 
 };
+
+	
+enum TypeSensor {DS18B20=0,DS18S20=1,EXT=2};
 
 #endif

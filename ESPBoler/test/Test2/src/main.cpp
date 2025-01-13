@@ -4,6 +4,7 @@
 #include "lcd.h"
 #include "etc.h"
 #include "fsconfig.h"
+#include "net.h"
 
 const char *ssid = "esp32-sensor";
 const char *password = "ss120key";
@@ -16,6 +17,7 @@ SensorDS18B20 objSensorDS18B20;
 VarSystem objVarSystem;
 
 volatile bool swch_readsensor = true;
+volatile bool swch_type_readsensor = true;
 
 TimerHandle_t _timer = NULL;
 
@@ -26,7 +28,8 @@ void setupDateTime();
 void timer_callback(TimerHandle_t pxTimer);
 void timerReadSensor_callback(TimerHandle_t pxTimer);
 void setupTimer();
-void ReadSensor();
+
+void ReadSensor(TypeSensor sens);
 
 void setup()
 {
@@ -63,9 +66,13 @@ void setup()
   setupArduinoOTA();
 #endif
 
+  setLCD("Con Zstack");
+  connectZstack();
+
   delay(2000);
 
   setLCDReady();
+
 
   setupTimer();
 }
@@ -75,10 +82,23 @@ void loop()
 
   ElegantOTA.loop();
   ArduinoOTA.handle();
+  readZstack();
 
   if (swch_readsensor)
   {
-    ReadSensor();
+    if(swch_type_readsensor)
+    {
+      log_i("LCD DS18B20");
+      ReadSensor(TypeSensor::DS18B20);
+      swch_type_readsensor =false;
+    }else 
+    {
+      log_i("LCD EXT");
+      ReadSensor(TypeSensor::EXT);
+      swch_type_readsensor = true;
+    }
+    
+    //swch_type_readsensor !=swch_type_readsensor;
     swch_readsensor = false;
   }
 }
@@ -149,7 +169,7 @@ void timer_callback(TimerHandle_t pxTimer)
   // loopDS18B20();
 }
 
-void ReadSensor()
+void ReadSensor(TypeSensor sens)
 {
 
   JsonObject documentRoot = objVarSystem.sensors.as<JsonObject>();
@@ -164,21 +184,51 @@ void ReadSensor()
 
     const char *addr_txt = keyValue.key().c_str();
 
-    uint8_t addr[8];
 
-    for (int i = 0; i < 8; i++)
+    uint8_t tSensor = objVarSystem.sensors[addr_txt]["type"].as<uint8_t>();
+
+    if(sens != tSensor){continue;}
+
+    float result=-300;
+
+    switch (tSensor)
     {
+      case TypeSensor::DS18B20:
+            
+          uint8_t addr[8];
+          for (int i = 0; i < 8; i++)
+          {
 
-      sscanf(addr_txt + (i * 2), "%2hhx", &addr[i]);
+          sscanf(addr_txt + (i * 2), "%2hhx", &addr[i]);
+          }
+          result = objSensorDS18B20.readTemperatureDS18B20(addr, objVarSystem.sensors[addr_txt]["type_s"]);
+
+        break;
+
+      case TypeSensor::EXT:
+            
+            if(!objVarSystem.sensors[addr_txt]["value"].isNull())
+               result = objVarSystem.sensors[addr_txt]["value"].as<float>();
+
+        break;
+      default:
+        return;
+        break;
     }
 
-    float result = objSensorDS18B20.readTemperatureDS18B20(addr, objVarSystem.sensors[addr_txt]["type_s"]);
-    float adjustment = objVarSystem.sensors[addr_txt]["adjustment"].as<float>();
-
-
     reads += objVarSystem.sensors[addr_txt]["name"].as<String>()+" =>";
-    reads += (result+adjustment);
+
+    if(result != -300)
+    {
+    float adjustment = objVarSystem.sensors[addr_txt]["adjustment"].as<float>();
+    reads += (result + adjustment);
     reads += "C\r\n";
+    
+    }else 
+    {
+       reads += "no data\r\n"; 
+
+    }
 
     // delay(2000);
   }
@@ -188,7 +238,9 @@ void ReadSensor()
   display.setTextColor(BLACK);
 
   display.println(reads);
-  display.print("Restart =>");
+
+  display.setCursor(0, 40);
+  display.print("restart =>");
   
   display.println(objVarSystem.restarts);
   display.display();

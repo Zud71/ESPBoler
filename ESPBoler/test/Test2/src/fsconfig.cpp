@@ -39,16 +39,16 @@ void FSConfig::setupFS()
         log_w("Restarts count %d", objVarSystem.restarts);
         saveRestartCount(objVarSystem.restarts);
 
+        loadNetConfExtSensor();
+
         loadSensor(nullptr);
 
-        log_i("Sensor loaded");
+        log_i("Loaded");
     }
 }
 
 bool FSConfig::loadSystemVar()
-
 {
-    //const char *path = "/config/system.json";
 
     File configFile = LittleFS.open(pathSystem, FILE_READ);
     if (!configFile)
@@ -108,6 +108,41 @@ bool FSConfig::loadSystemVar()
     return true;
 }
 
+bool FSConfig::loadNetConfExtSensor()
+{
+ log_i("Load net config sensor");
+
+    JsonDocument doc;
+
+    if (!LittleFS.exists(pathNetConfExtSensor))
+    {
+
+        File configFile = LittleFS.open(pathNetConfExtSensor, FILE_WRITE);
+        if (!configFile)
+        {
+            log_e("failed write");
+            return false;
+        }
+        else
+        {
+            log_i("Create file");
+
+            deserializeJson(doc,varNetConfExtSensor);   
+            serializeJson(doc, configFile);
+        }
+        configFile.close();
+    }
+
+    File configFile = LittleFS.open(pathNetConfExtSensor, FILE_READ);
+
+    deserializeJson(doc, configFile);
+    configFile.close();
+
+    objVarSystem.netConfExtSensor = doc;
+
+    return true;
+}
+
 void FSConfig::saveRestartCount(int count)
 {
     //const char *path = "/config/system.json";
@@ -151,8 +186,8 @@ void FSConfig::printFS()
 
 bool FSConfig::saveSensor(const char *addr, uint8_t type_s)
 {
-    log_i("Save sensor");
-    // const char *path = "/config/sens_out_t.json";
+    log_i("Save local sensor");
+
     JsonDocument doc;
 
     if (!LittleFS.exists(pathSensor))
@@ -190,7 +225,8 @@ bool FSConfig::saveSensor(const char *addr, uint8_t type_s)
         obj["err_count"] = 0;*/
         
         deserializeJson(doc[addr],varSensOut);
-
+        doc[addr]["type"] = type_s;
+        
         configFile = LittleFS.open(pathSensor, FILE_WRITE);
         serializeJson(doc, configFile);
         configFile.close();
@@ -205,7 +241,7 @@ bool FSConfig::saveSensor(const char *addr, uint8_t type_s)
 
 bool FSConfig::changeSensor(const char *addr, const char *key, const char *data)
 {
-    log_i("Change sensor");
+    log_i("Change local sensor");
 
     JsonDocument doc;
 
@@ -254,7 +290,7 @@ bool FSConfig::clearSensors()
 
 bool FSConfig::loadSensor(const char *addr)
 {
-    log_i("Load sensor");
+    log_i("Load local sensor");
 
     JsonDocument doc;
 

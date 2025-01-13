@@ -62,7 +62,7 @@ void setupWebApi()
 
     });
 
-    server.on("/scan", HTTP_GET, [] (AsyncWebServerRequest *request) {
+    server.on("/scan_sensor", HTTP_GET, [] (AsyncWebServerRequest *request) {
 
         log_i("WEB: run scan temperature sensor");
 
@@ -127,9 +127,10 @@ void setupWebApi()
 
     });
 
+
     server.on("/set_param_sensor", HTTP_GET, [] (AsyncWebServerRequest *request) {
 
-        log_i("WEB: set param temperature sensor");
+        log_i("WEB: set param sensor");
         AsyncResponseStream *response = request->beginResponseStream("application/json");
 
         const char* addr="addr"; 
@@ -172,6 +173,8 @@ void setupWebApi()
 
     });
 
+
+
     server.on("/set_param_sensor_json", HTTP_POST,  [](AsyncWebServerRequest *request){}, NULL, [](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total) {
 
         log_i("WEB: set json param temperature sensor");
@@ -202,9 +205,33 @@ void setupWebApi()
         request->send(200, "text/plain", "Hello, POST: " + message);
     });
 
-    server.onNotFound(notFound);
+    server.on("/set_ext_sensor", HTTP_GET, [] (AsyncWebServerRequest *request) {
 
-    
+        log_i("WEB: set ext sensor");
+
+        const char* addr="addr"; 
+
+        String txt_reg;
+        JsonDocument result;
+        result["status"]="OK";
+        result["data"]="";
+
+        AsyncResponseStream *response = request->beginResponseStream("application/json");
+
+        if (request->hasParam(addr)) 
+        {
+            txt_reg = request->getParam(addr)->value();
+            
+            objFSConfig.saveSensor(txt_reg.c_str(),TypeSensor::EXT);
+            
+        }
+
+        serializeJson(result,*response);
+        request->send(response);
+
+    });
+
+        
     server.on("/api/state_system", HTTP_GET, [](AsyncWebServerRequest *request){
         
         uint32_t espHeapFree = ESP.getFreeHeap() / 1024;
@@ -238,7 +265,8 @@ void setupWebApi()
         ElegantOTA.onStart(onOTAStart);
         ElegantOTA.onProgress(onOTAProgress);
         ElegantOTA.onEnd(onOTAEnd);
-
+    
+    server.onNotFound(notFound);
     server.begin();
 }
 
